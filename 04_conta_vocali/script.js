@@ -5,9 +5,33 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
+//Arrow Function
+const contaVocaliArrow = parola => {
+    let numero_vocali = 0;
+    for (let i = 0; i < parola.length; i++){
+        if (parola[i] === "a" || parola[i] === "e" || parola[i] === "i" || parola[i] === "o" || parola[i] === "u"){
+            numero_vocali++;
+        }
+    }
+    return numero_vocali;
+}
+
+
+//Function
+function contaVocali(parola){
+    let numero_vocali = 0;
+    for (let i = 0; i < parola.length; i++){
+        if (parola[i] === "a" || parola[i] === "e" || parola[i] === "i" || parola[i] === "o" || parola[i] === "u"){
+            numero_vocali++;
+        }
+    }
+    return numero_vocali;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log (contaVocali(word));
 
+console.log (contaVocaliArrow(word));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
