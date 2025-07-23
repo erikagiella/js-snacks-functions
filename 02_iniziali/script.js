@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 //Arrow Function
 const iniziali = array_stringhe => {
     const iniziali = [];
-    for (let i = 0; i < names.length; i++){
+    for (let i = 0; i < array_stringhe.length; i++){
         iniziali.push(array_stringhe[i].charAt(0));
     }
     return iniziali;
@@ -17,7 +17,7 @@ const iniziali = array_stringhe => {
 //Function
 function iniziali_2 (array_stringhe) {
     const iniziali = [];
-    for (let i = 0; i < names.length; i++){
+    for (let i = 0; i < array_stringhe.length; i++){
         iniziali.push(array_stringhe[i].charAt(0));
     }
     return iniziali;
